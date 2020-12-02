@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="iconos/favicon.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <!--GoogleFonts-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet" />
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+
+    <title>Basket</title>
+</head>
+
+
+<body>
+    <!-- Barra de Navegacion -->
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-togleable-sm bg-white">
+        <a class="icono" class="navbar-brand " href="index.html">
+            <svg role="img" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-basket-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+            </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon ion-navicon-round"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="home" href="index.html"> Basket </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id=nosotros href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Regístrate
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="registroclientes.html">Soy Cliente</a>
+                        <a class="dropdown-item" href="registroprod.html">Soy Productor</a>
+
+                    </div>
+                </li>
+
+            </ul>
+            <div class="login d-flex flex-row justify-content-center mt-4">
+
+                <div class="iconodetails">
+                    <a id="login1" class="nav-link " href="#"> <svg onmouseover="show()" onmouseout="show()" width="2em"
+                            height="2em" viewBox="0 0 16 16" class="bi bi-person-check-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" role="img">
+                            <path fill-rule="evenodd"
+                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        </svg> </a>
+                    <p id="text"> Iniciar Sesion </p>
+                </div>
+
+                <div class="iconodetails">
+                    <a id="login2" href="#" class="nav-link"> <svg onmouseover="show2()" onmouseout="show2()"
+                            width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person-x-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" role="img">
+                            <path fill-rule="evenodd"
+                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                        </svg> </a>
+                    <p id="text2"> Cerrar Sesion </p>
+                </div>
+
+                <div class="iconodetails">
+                    <p class="nav-user" id="loginUser"></p>
+
+                </div>
+            </div>
+    </nav>
+
+    <!--Slider-->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/imagen1.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Productos frescos a tu puerta</h5>
+                    <p>Pide tu primera canasta y empieza apoyar a los pequeños productores de tu región sin salir de
+                        casa. </p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="imagenes/imagen2.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>Pequeños productores , Productos frescos</h5>
+                    <p>Basket esta comprometido a solo trabajar con productores pequeños y locales para impulsar el
+                        campo colombiano. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/imagen3.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5> ¿Eres productor?</h5>
+                    <p> Regístrate en nuestro portal y participa en nuestro proyecto para beneficiar de un sistema justo
+                        sin cooperativas o intermediarios. </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <!--CARDS-->
+
+
+    <h2 class=como> Como Funciona </h2>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="card-deck ">
+                <div class="card bg-success col-sm-12 col-md-12 col-lg-4 ">
+                    <img src="iconos/registro.png" class="card-img-top" alt="registro">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Regístrate</h5>
+                        <p class="card-text  text-center"> A traves de nuestro portal llena el formulario y <b>
+                                regístrate. </b> </p>
+
+                    </div>
+                </div>
+                <div class="card bg-success col-sm-12 col-md-12 col-lg-4  ">
+                    <img src="iconos/programa.png" class="card-img-top" alt="Programa tu Canasta">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ">Programa</h5>
+                        <p class="card-text text-center"> Una vez a la semana puedes programar un envio  para recibir tu canasta de fruta y legumbres de manera simple a traves del portal. </p>
+
+                    </div>
+                </div>
+                <div class="card bg-success col-sm-12 col-md-12 col-lg-4 ">
+                    <img src="iconos/check.png" class="card-img-top" alt="check">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Listo!</h5>
+                        <p class="card-text text-center"> Así de simple recibiras productos de calidad y comprados al
+                            precio justo a pequeños productores lócales ¿Qué esperas para ser parte de la familía?
+                            ¡Únete!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer-->
+
+    <footer>
+<div class="iconosredes">
+<div class="ajusteiconos"> 
+    <a href="">  <img src="iconos/facebook.png" alt="facebook" srcset=""></a>
+    <a href="">    <img src="iconos/instagram.png" alt="instagram" srcset=""> </a>   
+</div>
+</div>
+<div class="textofooter">
+
+
+    <p>
+    
+        Sitio creado por Julian Lopez
+        <br>
+        Proyecto Final Unidad 2 
+    
+    </p>
+    </div>
+
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+    <script src="js/sesion.js"></script>
+</body>
+
+</html>
